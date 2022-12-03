@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-def uppercase(letter):
-    if ord(letter) >= 65 and ord(letter) <= 90:
-        return True
-    else:
-        return False
+def uppercase(str):
+    """converts letters to uppercase"""
+    for letter in str:
+        if ord(letter) >= 97 and ord(letter) <= 122:
+              letter = chr(ord(letter) - 32)
+        print("{:s}".format(letter), end="")
+    print("")
