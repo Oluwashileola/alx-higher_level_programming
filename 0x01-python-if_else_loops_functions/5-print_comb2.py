@@ -5,4 +5,4 @@ for number in range(0, 100):
     else:
         print("{:02}".format(number), end=", ")
 
-#Write a program that prints numbers from 0 to 99 seperated by a comma.
+# Write a program that prints numbers from 0 to 99 seperated by a comma.
