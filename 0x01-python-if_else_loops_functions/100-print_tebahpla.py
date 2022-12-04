@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# Write a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase
+
 decrement = 0
 for i in range(-122, -96):
     if abs(i) % 2 == 0:
