@@ -3,5 +3,7 @@ if __name__ == "__main__":
     '''adds all arguments'''
     import sys
 
+    total = 0
     for i in range(len(sys.argv) - 1):
-        print(sys.argv[0 + i])
+        total += int(sys.argv[i + 1])
+    print("{}".format(total))
