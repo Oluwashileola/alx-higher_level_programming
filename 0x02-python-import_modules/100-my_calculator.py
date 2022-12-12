@@ -8,7 +8,7 @@ if __name__ == "__main__":
     operator_error_message = "Unknown operator. Available operators: +, -, * and /"
 
 
-    if len(sys.argv) != 3:
+    if (len(sys.argv) - 1)!= 3:
         print("{}".format(arg_error_message))
         print(1)
     else:
@@ -17,16 +17,16 @@ if __name__ == "__main__":
         operator = sys.argv[1 + 1]
 
         if operator == "+":
-            print(calculator_1.add(a, b))
+            print("{} + {} = {}".format(a, b, calculator_1.add(a, b)))
             print(0)
         elif operator == "-":
-            print(calculator_1.sub(a, b))
-            print(0)
-        elif operator == "*":
-            print(calculator_1.mul(a, b))
+            print("{} - {} = {}".format(a, b, calculator_1.sub(a, b))
+            print("{}".format(0))
+        elif sys.argv[2] == "*":
+            print("{} * {} = {}".format(a, b, calculator_1.mul(a, b))
             print(0)
         elif operator == "/":
-            print(calculator_1.div(a, b))
+            print("{} / {} = {}".format(a, b, calculator_1.div(a, b))
             print(0)
         else:
             print("{}".format(operator_error_message))
