@@ -22,7 +22,7 @@ if __name__ == "__main__":
         elif operator == "-":
             print("{} - {} = {}".format(a, b, sub(a, b)))
             sys.exit(0)
-        elif sys.argv[2] == "*":
+        elif sys.argv[2] == '*':
             print("{} * {} = {}".format(a, b, mul(a, b)))
             print(0)
         elif operator == "/":
