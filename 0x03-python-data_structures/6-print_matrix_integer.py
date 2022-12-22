@@ -1,12 +1,9 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
     '''prints a matrix of integers'''
-    if isinstance(matrix, (list, int)):
-        if matrix == [[]]:
-            print("")
-        else:
-            for i in matrix:
-                for x in i:
-                    print("{}".format(x), end=" ")
-                print("")
-    return None
+    for i in range(len(matrix)):
+        for x in range(len(matrix[i])):
+            print("{}".format(matrix[i][x]), end=" ")
+            if len(matrix[x]) != len(matrix[i]):
+                print("", end="")
+        print("")
